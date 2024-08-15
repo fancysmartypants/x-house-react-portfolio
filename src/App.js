@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./scenes/Navbar";
+import useMediaQuery from "./hooks/useMediaQuery";
+import { useState } from "react";
 
 function App() {
+  const [selectedPage, setSelectedPage] = useState("home");
+  const [isTopOfPage, setIsTopOfPage] = useState(true);
+  const isDesktop = useMediaQuery("(min-width: 1060px)");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar
+        selectedPage={selectedPage} 
+        setSelectedPage={setSelectedPage}
+      />
     </div>
   );
 }
