@@ -16,6 +16,8 @@ module.exports = {
     },
     fontFamily: {
       averia: ["'Averia Serif Libre'", "serif"],
+      poppins: ["'Poppins'", "sans-serif"],
+      "noto": "'Noto Serif'",
     },
     screens: {
       xs: "480px",
@@ -25,6 +27,13 @@ module.exports = {
       lg: "1200px",
       xl: "1700px",
     },
+    "borderRadius": {
+      "81xl": "100px"
+    },
+    "fontSize": {
+      "5xl": "24px",
+      "inherit": "inherit"
+    }
   },
   plugins: [],
 }

@@ -61,14 +61,14 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                     href="https://learn.houseofx.co"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-averia px-6 py-3 bg-[#FF3939] text-[#0B171B] rounded-full font-bold hover:bg-[#F18E1A] transition duration-300"
+                    className="font-averia px-6 py-3 bg-[#FF3939] text-[#0B171B] rounded-81xl font-bold hover:bg-[#F18E1A] transition duration-300"
                     >
                     Learning Center
                     </a>
                 </div>
                 ) : (
                 <button
-                    className="rounded-full bg-yellow p-2"
+                    className="rounded-81xl bg-yellow p-2"
                     onClick={() => setIsMenuToggled(!isMenuToggled)}
                 >
                     <MenuIcon className="h-6 w-auto"/>
@@ -90,7 +90,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                         <Link page="Projects" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
                         <Link page="Join Us" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
                         <div className="mt-8">
-                            <StayBtn className="mb-4 hover:opacity-80 transition duration-300" />
+                            <StayBtn className="cursor-pointer mb-4 hover:opacity-80 transition duration-300" />
                             <a
                                 href="https://learn.houseofx.co"
                                 target="_blank"
