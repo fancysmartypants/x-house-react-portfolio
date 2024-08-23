@@ -12,6 +12,18 @@ module.exports = {
         "white": "#FFFFFF",
         "grey": "#E0E0E0",
         "dark-grey": "#333333",
+        "beige": '#f3efd9',
+        "gray":' #0b171b',
+        "lightsteelblue": '#bdd4ef',
+        "darkorange": {
+          "100": '#f49321',
+          "200":' #f18e1a'
+        },
+        "ivory": '#fffcea',
+        "tomato":' #ff3939',
+        "white": '#fff',
+        "cornflowerblue": '#70aaef',
+        "gainsboro": '#e0e0e0',
       },
     },
     fontFamily: {

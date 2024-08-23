@@ -2,11 +2,12 @@ import Navbar from "./scenes/Navbar";
 import Home from "./scenes/home";
 import useMediaQuery from "./hooks/useMediaQuery";
 import { useState, useEffect } from "react";
+import About from "./scenes/about";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
-  const isDesktop = useMediaQuery("(min-width: 1060px)");
+  const isDesktop = useMediaQuery("(min-width: 768px)");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,6 +29,10 @@ function App() {
         setSelectedPage={setSelectedPage}
       />
       <Home
+        selectedPage={selectedPage} 
+        setSelectedPage={setSelectedPage}
+      />
+      <About
         selectedPage={selectedPage} 
         setSelectedPage={setSelectedPage}
       />

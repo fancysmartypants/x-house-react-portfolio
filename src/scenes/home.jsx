@@ -38,7 +38,7 @@ const DesktopHome = () => {
                         whileHover={{ scale: 1.05 }}
                         transition={{ type: "spring", stiffness: 400, damping: 10 }}
                     >
-                        <b className="relative leading-[25.5px]">Join US</b>
+                        <b className="relative leading-[25.5px]">Join Us</b>
                     </motion.div>
                     <motion.div 
                         className="cursor-pointer w-[359px] rounded-81xl bg-white h-[101.3px] flex flex-row items-center justify-center py-9 px-[63px] box-border text-yellow"
@@ -74,20 +74,20 @@ const MobileHome = () => {
                 <b className="w-full relative tracking-[-0.02em] leading-[120%] text-left mb-6 ">Women and Neurodiverse in Data Science</b>
                 <div className="w-0.7 relative text-[24px] leading-[32px] font-averia text-left mb-8">Where Data Science, Innovation, and Inclusivity Converge</div>
                 <motion.div 
-                    className="cursor-pointer w-full max-w-[250px] rounded-81xl bg-yellow border-white border-[2px] border-solid box-border h-[80px] flex items-center justify-center mb-4"
+                    className="px-[50px] cursor-pointer w-full max-w-[200px] rounded-81xl bg-yellow border-white border-[2px] border-solid box-border h-[80px] flex items-center justify-center mb-4"
                     whileHover={{ scale: 1.05 }}
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 >
-                    <b className="font-averia text-white text-[24px] leading-[25.5px]">Join US</b>
+                    <b className="font-averia text-white text-[22px] px-[10px] leading-[25.5px]">Join Us</b>
                 </motion.div>
                 <motion.div 
-                    className="cursor-pointer w-full max-w-[250px] rounded-81xl bg-white h-[80px] flex items-center justify-center text-yellow"
+                    className="px-[50px] cursor-pointer w-full max-w-[200px] rounded-81xl bg-white h-[80px] flex items-center justify-center text-yellow"
                     whileHover={{ scale: 1.05 }}
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
                     onClick={() => window.open("https://learn.houseofx.co", "_blank")}
                     
                 >
-                    <b className="font-averia text-[24px] leading-[25.5px]">Learning Center</b>
+                    <b className=" font-averia text-[22px]  leading-[25.5px]">Learning Center</b>
                 </motion.div>
             </motion.div>
             <motion.img 
